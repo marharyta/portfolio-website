@@ -22,6 +22,9 @@
     <link href="https://unpkg.com/sanitize.css" rel="stylesheet">
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <style>
         :root {
             font-size: 16px;
@@ -31,7 +34,9 @@
 
         body {
             overflow-x: hidden;
-            font-family: "Helvetica Neue", HelveticaNeue, "TeX Gyre Heros", TeXGyreHeros, FreeSans, "Nimbus Sans L", "Liberation Sans", Arimo, Helvetica, Arial, "Lucida Grande", sans-serif;
+            font-family: "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif;
+            /* font-family: "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif; */
+            /* font-family: "Helvetica Neue", HelveticaNeue, "TeX Gyre Heros", TeXGyreHeros, FreeSans, "Nimbus Sans L", "Liberation Sans", Arimo, Helvetica, Arial, "Lucida Grande", sans-serif; */
 
         }
     </style>
@@ -130,29 +135,29 @@
             <small class="align-text-top text-xs">to
                 print my CV</small></span> -->
         <div class="relative min-h-full h-auto lg:flex lg:flex-col lg:justify-center lg:h-full print:text-green-800">
-            <p class="text-3xl md:text-5xl lg:text-6xl leading-snug font-light py-3 text-gray-800">
+            <p class="text-3xl md:text-5xl leading-snug font-light py-3 text-gray-800">
                 My name is Margo. I am a
-                <span class="font-medium">
+                <span class="font-normal">
                     Web
                     Engineer</span>
                 based in
                 Helsinki.
             </p>
-            <p class="text-3xl md:text-5xl lg:text-6xl leading-snug font-light py-3 text-gray-800">I specialise in
+            <p class="text-3xl md:text-5xl leading-snug font-light py-3 text-gray-800">I specialise in
                 creating
-                <span class="font-medium">full stack web applications </span>
+                <span class="font-normal">full stack web applications </span>
                 using
-                <span class="font-medium">React</span>,
-                <span class="font-medium">Figma</span>,
-                <span class="font-medium">Clojure</span>,
-                <span class="font-medium">ClojureScript</span>,
-                <span class="font-medium">NodeJS</span>,
-                <span class="font-medium">PostgreSQL</span>,
-                <span class="font-medium">Atomic Architecture</span>, and
-                <span class="font-medium">Design Systems</span>.
+                <span class="font-normal">React</span>,
+                <span class="font-normal">Figma</span>,
+                <span class="font-normal">Clojure</span>,
+                <span class="font-normal">ClojureScript</span>,
+                <span class="font-normal">NodeJS</span>,
+                <span class="font-normal">PostgreSQL</span>,
+                <span class="font-normal">Atomic Architecture</span>, and
+                <span class="font-normal">Design Systems</span>.
             </p>
-            <p class="text-3xl md:text-5xl lg:text-6xl leading-snug font-light py-3 text-gray-800">
-                I use my coding and <span class="font-medium">service design</span> skills to come up with the most
+            <p class="text-3xl md:text-5xl leading-snug font-light py-3 text-gray-800">
+                I use my coding and <span class="font-normal">service design</span> skills to come up with the most
                 creative and feasible
                 architectural solution for my clients.
             </p>
@@ -166,7 +171,7 @@
                 <div class="border-t border-black sm:flex sm:flex-nowrap sm:justify-start py-6">
                     <h2
                         class="font-medium text-xl flex-initial mr-6  flex-shrink-0 uppercase sm:w-24 text-gray-800 lg:flex-none lg:w-52 mb-3 sm:mb-0">
-                        Back-End
+                        BackEnd
                     </h2>
                     <p class="text-xl text-gray-800 font-normal">
                         Clojure, Node.js, nginx, CRDT, &nbsp;microservices, http, web sockets API, API
@@ -176,7 +181,7 @@
                 <div class="border-t border-black sm:flex sm:flex-nowrap sm:justify-start py-6">
                     <h2
                         class="font-medium text-xl flex-initial	mr-6  flex-shrink-0 uppercase sm:w-24 text-gray-800 lg:flex-none lg:w-52 mb-3 sm:mb-0">
-                        Front-End
+                        FrontEnd
                     </h2>
                     <p class="text-lg text-gray-800 font-normal">
                         ClojureScript, React.js, Redux, TypeScript, React Native,
@@ -190,6 +195,7 @@
                     <h2
                         class="font-medium text-xl flex-initial mr-6  flex-shrink-0 uppercase sm:w-24 text-gray-800 lg:flex-none lg:w-52 mb-3 sm:mb-0">
                         Cloud &amp;
+                        <br />
                         DevOps
                     </h2>
                     <p class="text-lg text-gray-800 font-normal">
@@ -232,7 +238,7 @@
                     </p>
                     <span class="text-xl flex-none w-42 hidden lg:block">
                         <a class="text-gray-500 font-medium"
-                            href="http://rems-demo.rahtiapp.fi/">http://rems-demo.rahtiapp.fi/</a>
+                            href="http://rems-demo.rahtiapp.fi/">rems-demo.rahtiapp.fi</a>
                     </span>
                 </div>
 
@@ -249,9 +255,10 @@
                         <br />
                         React, TypeScript, SASS modules, Apollo Client, GraphQL, Design tokens
                     </p>
-                    <span class="text-xl flex-none w-42 hidden lg:block">
-                        <a class="text-gray-500 font-medium" href="https://ahti.app">https://ahti.app</a>
-                    </span>
+                    <a class="text-xl flex-none w-42 hidden lg:block align-text-bottom text-gray-500 font-medium inline"
+                        href="https://ahti.app">
+                        ahti.app
+                    </a>
                 </div>
 
                 <div class="border-t border-black sm:flex sm:flex-nowrap sm:justify-start py-6">
@@ -264,7 +271,8 @@
                         CSS.
                     </p>
                     <span class="text-xl flex-none w-42 hidden lg:block">
-                        <a class="text-gray-500 font-medium" href="http://mymonologue.io/">http://mymonologue.io/</a>
+                        <a class="text-gray-500 font-medium align-text-bottom"
+                            href="http://mymonologue.io/">mymonologue.io</a>
                     </span>
                 </div>
 
@@ -304,7 +312,7 @@
             <h3 class="block lg:inline mb-6 lg:mb-0 text-4xl font-light">
                 WebSummit 2016 in Lisbon: The Good Parts
                 <a href="https://medium.com/@riittagirl/websummit-2016-in-lisbon-the-good-parts-b1aff5e2dab1"
-                    class="text-xs align-text-top mr-24 underline font-medium">
+                    class="text-xs align-text-top mr-24 underline font-medium ">
                     Medium</a>
 
             </h3>
