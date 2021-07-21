@@ -21,13 +21,11 @@
 
     <link href="https://unpkg.com/sanitize.css" rel="stylesheet">
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link href="./hint.css" rel="stylesheet">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
 
     <style>
         :root {
@@ -129,9 +127,9 @@
 
     <meta name="apple-mobile-web-app-capable" content="yes">
 
-    <script type="application/javascript">
+    <!-- <script type="application/javascript">
         (function (b, o, n, g, s, r, c) { if (b[s]) return; b[s] = {}; b[s].scriptToken = "Xy0xNTYxNzQ0MTQ1"; b[s].callsQueue = []; b[s].api = function () { b[s].callsQueue.push(arguments); }; r = o.createElement(n); c = o.getElementsByTagName(n)[0]; r.async = 1; r.src = g; r.id = s + n; c.parentNode.insertBefore(r, c); })(window, document, "script", "https://cdn.oribi.io/Xy0xNTYxNzQ0MTQ1/oribi.js", "ORIBI");
-    </script>
+    </script> -->
 
 </head>
 
@@ -185,7 +183,16 @@
                         BackEnd
                     </h2>
                     <p class="text-xl text-gray-800 font-normal md:w-1/2" data-aos="fade-left">
-                        Clojure, Node.js, GraphQL, API Design, nginx, CRDT, server security, PostgreSQL, SSR, MongoDB.
+                        Clojure &middot;
+                        Node.js &middot;
+                        GraphQL &middot;
+                        API Design &middot;
+                        nginx &middot;
+                        CRDT &middot;
+                        server security &middot;
+                        PostgreSQL &middot;
+                        SSR &middot;
+                        MongoDB
                     </p>
                 </div>
 
@@ -195,11 +202,30 @@
                         FrontEnd
                     </h2>
                     <p class="text-xl text-gray-800 font-normal md:w-1/2" data-aos="fade-left">
-                        ClojureScript, React.js, Redux, TypeScript, React Native,
-                        Progressive Web Apps, Service Workers, functional JavaScript (RxJS, RamdaJS), CSSinJS (styled
-                        components, emotion etc.), CSS processors (sass, less, postcss etc.), CSS resets,
-                        project bundlers (Webpack, Parcel, Fusebox), Accessibility, User Experience, vertical
-                        decomposition (micro front-ends), WebGL, Gatsby, TailwindCSS</p>
+                        ClojureScript &middot;
+                        React.js &middot;
+                        Redux &middot;
+                        Gatsby &middot;
+                        Progressive Web Apps &middot;
+
+                        <!-- TypeScript
+                        React Native -->
+
+                        Service Workers &middot;
+                        <span>functional
+                            JavaScript
+                            &middot;</span>
+
+                        <span class="hint--top" aria-label="styled components, emotion">CSSinJS &middot;</span>
+                        <span class="hint--top" aria-label="sass, less, postcss etc.">CSS processing techniques
+                            &middot;</span>
+                        <span>CSS resets &middot;</span>
+                        <span>TailwindCSS &middot;</span>
+                        <span>WebGL &middot;</span>
+                        <span class="hint--top" aria-label="Webpack, Parcel">project bundlers &middot;</span>
+                        Accessibility &middot;
+                        UX
+                    </p>
                 </div>
                 <div class="border-t border-black md:flex md:flex-nowrap md:justify-between py-6">
                     <h2 class="font-medium text-3xl flex-initial mr-6  flex-shrink-0 uppercase  text-gray-800 lg:flex-none md:w-52 mb-3 sm:mb-0"
@@ -209,8 +235,12 @@
                         DevOps
                     </h2>
                     <p class="text-xl text-gray-800 font-normal md:w-1/2" data-aos="fade-left">
-                        AWS (Lambda, S3, Route 53, Amplify, etc.), Google Cloud Platform, Docker, Netlify, Digital
-                        Ocean.</p>
+                        <span class="hint--top" aria-label="Lambda, S3, Route 53,
+                        Amplify, etc.">AWS &middot;</span>
+                        Google Cloud Platform &middot;
+                        Docker &middot;
+                        Netlify
+                    </p>
                 </div>
                 <div class="border-t border-black md:flex md:flex-nowrap md:justify-between py-6">
                     <h2 class="font-medium text-3xl flex-initial	mr-6  flex-shrink-0 uppercase  text-gray-800 lg:flex-none md:w-52 mb-3 sm:mb-0"
@@ -218,9 +248,16 @@
                         Design
                     </h2>
                     <p class="text-xl text-gray-800 font-normal md:w-1/2" data-aos="fade-left">
-                        Service Design, Design Systems, Design Tokens, Digital Art Direction, Figma (Web Design),
-                        Photoshop (Photo
-                        editing), Sketch, Digital Branding.
+                        Service Design &middot;
+                        Web Design &middot;
+                        Design Systems &middot;
+                        Design Tokens &middot;
+                        Digital Art Direction &middot;
+                        <span class="hint--top" aria-label="Moke ups">Figma &middot;</span>
+                        <span class="hint--top" aria-label="Photo
+                        editing">Photoshop &middot;</span>
+                        Sketch &middot;
+                        Digital Branding &middot;
                     </p>
 
                 </div>
@@ -345,11 +382,11 @@
                     </a>
                 </h3>
                 <a href="https://www.youtube.com/embed/AuwpOsrzHC8?controls=0&amp;modestbranding=1&amp;showinfo=0"
-                    class="lg:hidden text-2xl block font-medium">Link</a>
-                <a href="https://speakerdeck.com/marharyta/the-design-ops-cocktail"
-                    class="lg:hidden text-2xl block font-medium">
+                    class="lg:hidden text-2xl block font-medium text-gray-600 ">link</a>
+                <!-- <a href="https://speakerdeck.com/marharyta/the-design-ops-cocktail"
+                    class="lg:hidden text-2xl block font-medium flex-none">
                     Slides
-                </a>
+                </a> -->
                 <iframe width="66.8%" height="400px" class="lazyload hidden lg:block" loading="lazy"
                     src="https://www.youtube.com/embed/AuwpOsrzHC8?controls=0&amp;modestbranding=1&amp;showinfo=0"
                     title="YouTube video player" frameborder="0"
@@ -362,7 +399,7 @@
                     HolyJS 2021 Piter. A tale of CSS Resets and Everything You Need to Know About Them
                 </h3>
                 <a href="https://www.youtube.com/embed/i1lDSz1W0xE?controls=0&amp;modestbranding=1&amp;showinfo=0"
-                    class="lg:hidden text-2xl block font-medium">Link</a>
+                    class="lg:hidden text-2xl block font-medium text-gray-600 ">link</a>
                 <iframe width="66.8%" height="400px" class="lazyload hidden lg:block" loading="lazy"
                     src="https://www.youtube.com/embed/i1lDSz1W0xE?controls=0&amp;modestbranding=1&amp;showinfo=0"
                     title="YouTube video player" frameborder="0"
@@ -374,7 +411,7 @@
                     React Finland 2020. Going beyond Redux. Diversify frontend state management
                 </h3>
                 <a href="https://www.youtube.com/embed/r92mAiEWqtU?controls=0&amp;modestbranding=1&amp;showinfo=0"
-                    class="lg:hidden text-2xl block font-medium">Link</a>
+                    class="lg:hidden text-2xl block font-medium text-gray-600 ">link</a>
                 <iframe width="66.8%" height="400px" class="lazyload hidden lg:block" loading="lazy"
                     src="https://www.youtube.com/embed/r92mAiEWqtU?controls=0&amp;modestbranding=1&amp;showinfo=0"
                     title="YouTube video player" frameborder="0"
@@ -386,7 +423,7 @@
                     React Vienna 2020. A tale of CSS Resets and Everything You Need to Know About Them
                 </h3>
                 <a href="https://www.youtube.com/embed/0i3E6v3VxOA?controls=0&amp;modestbranding=1&amp;showinfo=0"
-                    class="lg:hidden text-2xl block font-medium">Link</a>
+                    class="lg:hidden text-2xl block font-medium text-gray-600 ">link</a>
                 <iframe width="66.8%" height="400px" class="lazyload hidden lg:block" loading="lazy"
                     src="https://www.youtube.com/embed/0i3E6v3VxOA?controls=0&amp;modestbranding=1&amp;showinfo=0"
                     title="YouTube video player" frameborder="0"
@@ -398,7 +435,7 @@
                     Turku Loves Frontend 2018. The D Word of the Front End
                 </h3>
                 <a href="https://www.youtube.com/embed/lH53PU96nX4"
-                    class="lg:hidden text-2xl block font-medium">Link</a>
+                    class="lg:hidden text-2xl block font-medium text-gray-600 ">link</a>
                 <iframe width="66.8%" height="400px" class="lazyload hidden lg:block" loading="lazy"
                     src="https://www.youtube.com/embed/lH53PU96nX4" title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -410,7 +447,7 @@
                     Helsinki JS 2017. Fantastic 60fps and Where To Find them
                 </h3>
                 <a href="https://www.youtube.com/embed/1d5sxBnd32Y"
-                    class="lg:hidden text-2xl block font-medium">Link</a>
+                    class="lg:hidden text-2xl block font-medium text-gray-600 ">link</a>
                 <iframe width="66.8%" height="400px" class="lazyload hidden lg:block" loading="lazy"
                     src="https://www.youtube.com/embed/1d5sxBnd32Y" title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -441,18 +478,24 @@
         <!-- <h2 class="text-6xl font-light">Social</h2> -->
         <div class="h-full flex flex-col start">
             <div class="relative mt-8 w-full">
-                <p class="block text-5xl md:text-6xl lg:text-8xl font-light  mb-20">Let's make something great! Email <a
-                        href="riittagirl@gmail.com"
-                        class="inline text-5xl md:text-6xl lg:text-8xl font-light underline">riittagirl@gmail.com</a>
+                <p class="block text-5xl md:text-6xl font-light md:leading-snug">Let's make something
+                    great! </p>
+                <p class="block text-5xl md:text-6xl font-light  mb-20 md:leading-snug">
+                    Email <a href="riittagirl@gmail.com"
+                        class="inline text-5xl md:text-6xl font-normal md:leading-snug">riittagirl@gmail.com</a>
                     for
                     collaboration!
                 </p>
-                <a href="https://codepen.io/riittagirl" class=" inline text-4xl font-light mr-6">CodePen</a>
-                <a href="https://medium.com/@riittagirl" class="inline text-4xl font-light mr-6 ">Medium</a>
-                <a href="https://github.com/marharyta" class="inline text-4xl font-light mr-6">GitHub</a>
-                <a href="https://dev.to/riittagirl" class=" inline text-4xl font-light mr-6 ">dev.to</a>
+                <a href="https://codepen.io/riittagirl"
+                    class="block md:inline-block text-4xl md:text-2xl font-light mr-6">CodePen</a>
+                <a href="https://medium.com/@riittagirl"
+                    class="block md:inline-block text-4xl md:text-2xl font-light mr-6 ">Medium</a>
+                <a href="https://github.com/marharyta"
+                    class="block md:inline-block text-4xl md:text-2xl font-light mr-6 ">GitHub</a>
+                <a href="https://dev.to/riittagirl"
+                    class=" block md:inline-block text-4xl md:text-2xl font-light mr-6 ">dev.to</a>
                 <a href="https://www.linkedin.com/in/margarita-obraztsova/"
-                    class=" inline text-4xl font-light mr-6">LinkedIn</a>
+                    class=" md:inline-block text-4xl md:text-2xl font-light mr-6">LinkedIn</a>
             </div>
         </div>
         <span class="block absolute bottom-0 text-xs text-gray-300 ">@copyright 2021.</span>
