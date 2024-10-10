@@ -1,7 +1,7 @@
 {
   "name": "typed-portfolio",
   "version": "1.0.0",
-  "main": "index.js",
+  "source": "index.html",
   "repository": "https://github.com/marharyta/portfolio-website.git",
   "author": "Margo Obraztsova <marharyta.obraztsova@gmail.com>",
   "license": "MIT",
