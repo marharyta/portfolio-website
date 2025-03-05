@@ -1,0 +1,287 @@
+/* #services {
+    background-color: $pink;
+    min-height: 779px;
+    height: 100vh;
+  
+    .service-icons{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background-color: transparent;
+        z-index: 0;
+  
+        img{
+          width: 300px;
+          height: auto;
+          position: absolute;
+        }
+  
+        .service-icons-lips{
+          bottom: 90px;
+          left: -200px;
+          transform: rotate(26deg);
+  
+          @media (min-width: 481px) and (max-width: 767px) {
+            top: 60px;
+          }
+  
+          @media (min-width: 320px) and (max-width: 480px) {
+            top: 60px;
+          }
+        }
+  
+        .service-icons-leaf{
+          bottom: 90px;
+          right: -90px;
+          transform: rotate(195deg) scale(1.3);
+  
+          @media (min-width: 481px) and (max-width: 767px) {
+            top: 140px;
+            right: -190px;
+            transform: rotate(195deg) scale(1);
+          }
+  
+          @media (min-width: 320px) and (max-width: 480px) {
+            top: 140px;
+            right: -190px;
+            transform: rotate(195deg) scale(1);
+          }
+        }
+  
+      @media (min-width: 481px) and (max-width: 767px) {
+        // display: none;
+      }
+  
+      @media (min-width: 320px) and (max-width: 480px) {
+        // display: none;
+      }
+            
+    }
+  
+    .block-title{
+      padding-top: $header_padding * 2 + 86px;
+  
+      @media (min-width: 481px) and (max-width: 767px) {
+        padding-top: $header_padding;
+      }
+  
+      @media (min-width: 320px) and (max-width: 480px) {
+        padding-top: $header_padding;
+        // padding-bottom: $header_padding;
+      }
+    }
+  
+    .block-content .grid{
+      width: 90vw;
+      height: auto;
+      display: block;
+      position: relative;
+  
+      ul {
+        width: 100%;
+        height: 100%;
+      }
+  
+      ul li {
+        position: relative;
+        display: inline-block;
+        color: white;
+        font-size: 41px;
+        padding-right: $header_padding * 1.5;
+        margin-top: 86px;
+        font-family: $font_regular;
+        // z-index: 1;
+  
+        @media (min-width: 481px) and (max-width: 767px) {
+          margin-top: 35px;
+          font-size: 26px;
+          width: 100%;
+          text-align: center;
+          padding-right: 0px;
+  
+          .service{
+            text-align: center;
+          }
+        }
+  
+        @media (min-width: 320px) and (max-width: 480px) {
+          margin-top: 35px;
+          font-size: 26px;
+          width: 100%;
+          text-align: center;
+          padding-right: 0px;
+  
+          .service{
+            padding-right: 0px;
+            text-align: center;
+          }
+        }
+  
+        .title{
+          z-index: 1200;
+          position: relative;
+        }
+      }
+  
+      @media (min-width: 481px) and (max-width: 767px) {
+        width: 100vw;
+      }
+  
+      @media (min-width: 320px) and (max-width: 480px) {
+        width: 100vw;
+      }
+    }
+  
+  }
+  
+  section[id*=services] ul li [class|=image] {
+    z-index: 0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    
+    right: -200px;
+    top: -150px;
+    z-index: 1;
+    filter: grayscale(9%) brightness(90%);
+  
+    // filter: hue-rotate(-1deg);
+  
+    @media (min-width: 481px) and (max-width: 767px) {
+      display: none;
+    }
+  
+    @media (min-width: 320px) and (max-width: 480px) {
+      display: none;
+    }
+      
+  }
+  
+  section[id*=services] ul li [class|=image][class*=manicure] {
+    width: 420px;
+    height: 420px;
+    background-image: url('../assets/images/manicure.png');
+    right: -23px;
+    top: -15px;
+  }
+  
+  section[id*=services] ul li [class|=image][class*=hair] {
+    width: 420px;
+    height: 420px;
+    background-image: url('../assets/images/hair.png');
+    right: -243px;
+    top: -15px;
+  }
+  
+  section[id*=services] ul li [class|=image][class*=makeup] {
+    width: 420px;
+    height: 420px;
+    background-image: url('../assets/images/make-up.png');
+    right: -243px;
+    top: -15px;
+  }
+  
+  section[id*=services] ul li [class|=image][class*=brows] {
+    width: 420px;
+    height: 420px;
+    background-image: url('../assets/images/brows_and_lashes.png');
+    right: -100px;
+    top: -15px;
+  }
+  
+  section[id*=services] ul li [class|=image][class*=waxing] {
+    width: 420px;
+    height: 420px;
+    background-image: url('../assets/images/waxing.png');
+    right: -13px;
+    top: -15px;
+  }
+  section[id*=services] ul li [class|=image][class*=wedding] {
+    width: 420px;
+    height: 420px;
+    background-image: url('../assets/images/wedding.png');
+    right: -70px;
+    top: -15px;
+  }
+  section[id*=services] ul li [class|=image][class*=formen] {
+    width: 380px;
+    height: 420px;
+    background-image: url('../assets/images/formen.png');
+    right: -177px;
+    top: -15px;
+  }
+  
+  section[id*=services] ul li .service:hover [class|=image] {
+      opacity: 1;
+      visibility: visible;
+      transform: translate(-25px, -50px);
+      -webkit-transition: opacity .4s ease, transform .6s ease;
+      -o-transition: opacity .4s ease, transform .6s ease;
+      transition: opacity .4s ease, transform .6s ease;
+  } */
+
+
+  /* <ul>
+          <li>
+            <div className="service">
+              <p className="title">
+                Маникюр и педикюр
+              </p>
+              <div className="image-manicure"></div>
+            </div>
+          </li>
+          <li>
+            <div className="service">
+              <p className="title">
+                Волосы
+              </p>
+              <div className="image-hair"></div>
+            </div>
+          </li>
+          <li>
+            <div className="service">
+              <p className="title">
+                Макияж
+              </p>
+              <div className="image-makeup"></div>
+            </div>
+          </li>
+          <li>
+            <div className="service">
+              <p className="title">
+                Брови и ресницы
+              </p>
+              <div className="image-brows"></div>
+             </div>
+            </li>
+          <li>
+            <div className="service">
+              <p className="title">
+                Восковая депиляция
+              </p>
+              <div className="image-waxing"></div>
+            </div>
+          </li>
+          <li>
+            <div className="service">
+              <p className="title">
+                Свадебные услуги
+              </p>
+              <div className="image-wedding"></div>
+            </div>
+          </li>
+          <li>
+            <div className="service">
+              <p className="title">
+                Мужчинам
+              </p>
+              <div className="image-formen"></div>
+            </div>
+          </li>
+        </ul> */
