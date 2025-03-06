@@ -18,7 +18,6 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="#161616" />
     <meta name="apple-mobile-web-app-title" content="Margo Roi" />
 
-    <script src="https://cdn.tailwindcss.com"></script>
     <link href="./style.css" rel="stylesheet" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -39,9 +38,6 @@
         overflow-x: hidden;
         font-family: "Helvetica Neue", HelveticaNeue, Helvetica, Arial,
           sans-serif;
-        /* font-family: 'Roboto', sans-serif; */
-        /* font-family: "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif; */
-        /* font-family: "Helvetica Neue", HelveticaNeue, "TeX Gyre Heros", TeXGyreHeros, FreeSans, "Nimbus Sans L", "Liberation Sans", Arimo, Helvetica, Arial, "Lucida Grande", sans-serif; */
       }
     </style>
 
@@ -50,13 +46,6 @@
     <meta name="twitter:card" content="summary_large_image" />
 
     <link rel="manifest" href="/manifest.json" />
-
-    <script async src="https://cdn.splitbee.io/sb.js"></script>
-    <!-- <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-icon-180.png">
-    <link rel="apple-touch-icon" sizes="167x167" href="assets/apple-icon-167.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="assets/apple-icon-152.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="assets/apple-icon-120.png"> -->
-
     <link
       rel="apple-touch-startup-image"
       href="assets/apple-splash-2048-2732.png"
@@ -215,28 +204,22 @@
     <link rel="apple-touch-icon" href="assets/apple-icon-180.png" />
 
     <meta name="apple-mobile-web-app-capable" content="yes" />
-
-    <!-- <script type="application/javascript">
-        (function (b, o, n, g, s, r, c) { if (b[s]) return; b[s] = {}; b[s].scriptToken = "Xy0xNTYxNzQ0MTQ1"; b[s].callsQueue = []; b[s].api = function () { b[s].callsQueue.push(arguments); }; r = o.createElement(n); c = o.getElementsByTagName(n)[0]; r.async = 1; r.src = g; r.id = s + n; c.parentNode.insertBefore(r, c); })(window, document, "script", "https://cdn.oribi.io/Xy0xNTYxNzQ0MTQ1/oribi.js", "ORIBI");
-    </script> -->
   </head>
 
-  <body
-    class="relative min-h-screen max-h-screen m-auto my-0 max-w-full overflow-x-hidden p-2 lg:pt-0 bg-gray-50"
-  >
+  <body class="relative overflow-x-hidden w-full bg-gray-50">
     <section
-      class="w-full min-h-screen h-auto relative p-3 sm:pt-12 md:pt-24 lg:p-12 2xl:px-24 lg:py-12 lg:h-screen"
+      class="w-full h-auto relative p-3 sm:pt-12 md:pt-24 lg:p-12 2xl:px-24 lg:py-12 lg:h-screen"
     >
-      <span
+      <!-- <span
         class="hidden lg:block lg:absolute lg:top-12 lg:font-bold lg:text-gray-400 lg:right-12 lg:text-lg"
         >CMD+P
         <small class="align-text-top text-xs">to print my CV</small></span
-      >
+      > -->
       <div
         class="relative min-h-full h-auto lg:flex lg:flex-col lg:justify-center lg:h-full print:text-green-800"
       >
         <p
-          class="text-2xl sm:text-3xl md:text-4xl font-light py-3 text-gray-800 md:leading-snug lg:leading-tight"
+          class="text-3xl sm:text-3xl md:text-4xl font-light py-3 text-gray-800 md:leading-snug lg:leading-tight"
           data-aos="fade-right"
         >
           My name is Margo. I am a Ukrainian
@@ -244,7 +227,7 @@
           based in Helsinki.
         </p>
         <p
-          class="text-2xl sm:text-3xl md:text-4xl font-light py-3 text-gray-800 md:leading-snug lg:leading-tight"
+          class="text-3xl sm:text-3xl md:text-4xl font-light py-3 text-gray-800 md:leading-snug lg:leading-tight"
           data-aos="fade-right"
           data-aos-delay="100"
         >
@@ -261,7 +244,7 @@
           <span class="font-normal">Atomic Architecture</span>, and
           <span class="font-normal">Design Systems</span>.
         </p>
-        <p
+        <!-- <p
           class="text-2xl sm:text-3xl md:text-4xl font-light py-3 text-gray-800 md:leading-snug lg:leading-tight"
           data-aos="fade-right"
           data-aos-delay="200"
@@ -269,9 +252,22 @@
           I use my coding and
           <span class="font-normal">service design</span> skills to come up with
           the most creative and feasible architectural solution for my clients.
-        </p>
+        </p> -->
       </div>
     </section>
+
+    <section class="w-full relative h-auto p-3 lg:p-12 2xl:px-24 mt-24 lg:mt-0">
+      <h2
+        class="text-3xl lg:text-6xl font-medium lg:font-light lowercase lg:capitalize text-right lg:text-left text-gray-500 lg:text-gray-800"
+        data-aos="fade-right"
+      >
+        Currently Working
+      </h2>
+      <p class="font-medium text-3xl py-6">
+        Senior Front-end Engineer at OmaPosti
+      </p>
+    </section>
+
     <section
       class="w-full min-h-screen relative h-auto p-3 lg:p-12 2xl:px-24 mt-24 lg:mt-0"
     >
@@ -281,29 +277,8 @@
       >
         Areas of expertise
       </h2>
-      <!-- and
-            interest -->
       <div class="h-full flex flex-col start">
         <div class="relative mt-8 w-full">
-          <div
-            class="border-t border-black md:flex md:flex-nowrap md:justify-between py-6"
-          >
-            <h2
-              class="font-medium text-3xl flex-initial mr-6 flex-shrink-0 uppercase text-gray-800 lg:flex-none md:w-52 mb-3 sm:mb-0"
-              data-aos="fade-right"
-            >
-              BackEnd
-            </h2>
-            <p
-              class="text-xl text-gray-800 font-normal md:w-1/2"
-              data-aos="fade-left"
-            >
-              Next.js &middot; Node.js &middot; GraphQL &middot; REST API
-              &middot; Clojure &middot; PostgreSQL &middot; API Design &middot;
-              nginx &middot; SSR
-            </p>
-          </div>
-
           <div
             class="border-t border-black md:flex md:flex-nowrap md:justify-between py-6"
           >
@@ -317,26 +292,39 @@
               class="text-xl text-gray-800 font-normal md:w-1/2"
               data-aos="fade-left"
             >
-              React.js &middot; Redux &middot; ClojureScript &middot;
-              Progressive Web Apps &middot; TypeScript &middot; Service Workers
-              &middot; <span>TailwindCSS &middot;</span> Webpack 5 &middot;
-              <span>functional JavaScript &middot;</span>
+              TypeScript &middot; React.js &middot; Next.JS &middot; Redux
+              &middot; ClojureScript &middot; Progressive Web Apps &middot;
+              <span>TailwindCSS 4 &middot;</span> Webpack 5 &middot; Vite
+              &middot; Storybook &middot; micro frontends &middot; module
+              federation &middot; Apollo Client &middot;
 
               <span class="hint--top" aria-label="styled components, emotion"
-                >CSSinJS &middot;</span
-              >
-              <span class="hint--top" aria-label="sass, less, postcss etc."
-                >CSS processing techniques &middot;</span
+                >CSS-in-JS &middot;</span
               >
               <span>CSS resets &middot;</span>
 
               <span>WebGL &middot;</span>
-              <span class="hint--top" aria-label="Webpack, Parcel"
-                >project bundlers &middot;</span
-              >
-              Accessibility &middot; UX
+              Web Accessibility &middot; functional JavaScript
             </p>
           </div>
+          <div
+            class="border-t border-black md:flex md:flex-nowrap md:justify-between py-6"
+          >
+            <h2
+              class="font-medium text-3xl flex-initial mr-6 flex-shrink-0 uppercase text-gray-800 lg:flex-none md:w-52 mb-3 sm:mb-0"
+              data-aos="fade-right"
+            >
+              BackEnd
+            </h2>
+            <p
+              class="text-xl text-gray-800 font-normal md:w-1/2"
+              data-aos="fade-left"
+            >
+              Node.js &middot; SSR &middot; GraphQL &middot; REST API &middot;
+              Clojure &middot; PostgreSQL &middot; API Design &middot; nginx
+            </p>
+          </div>
+
           <div
             class="border-t border-black md:flex md:flex-nowrap md:justify-between py-6"
           >
@@ -352,14 +340,14 @@
               class="text-xl text-gray-800 font-normal md:w-1/2"
               data-aos="fade-left"
             >
+              Vercel &middot;
               <span
                 class="hint--top"
                 aria-label="Lambda, S3, Route 53,
                         Amplify, etc."
                 >AWS &middot;</span
               >
-              Google Cloud Platform &middot; Docker &middot; Vercel &middot;
-              Netlify
+              Google Cloud Platform &middot; Docker &middot; GitHub Actions
             </p>
           </div>
           <div
@@ -375,8 +363,8 @@
               class="text-xl text-gray-800 font-normal md:w-1/2"
               data-aos="fade-left"
             >
-              Service Design &middot; Web Design &middot; Design Systems
-              &middot; Design Tokens &middot; Digital Art Direction &middot;
+              Design Systems &middot; Design Tokens &middot; Digital Art
+              Direction &middot; Web Design &middot; Service Design &middot;
               <span class="hint--top" aria-label="Moke ups"
                 >Figma &middot;</span
               >
@@ -386,7 +374,7 @@
                         editing"
                 >Photoshop &middot;</span
               >
-              Sketch &middot; Digital Branding
+              Digital Branding
             </p>
           </div>
         </div>
@@ -403,6 +391,17 @@
         Publications
       </h2>
       <div class="h-full mt-12">
+        <h3
+          class="block lg:inline mb-6 lg:mb-0 text-4xl font-light md:leading-snug"
+          data-aos="fade-right"
+        >
+          You do not get Tailwind.
+          <a
+            href="https://medium.com/finua/why-we-at-finua-use-tailwind-6af3e767c513"
+            class="text-xs align-text-top mr-24 underline font-medium"
+            >Medium</a
+          >
+        </h3>
         <h3
           class="block lg:inline mb-6 lg:mb-0 text-4xl font-light md:leading-snug"
           data-aos="fade-right"
@@ -524,6 +523,26 @@
             data-aos="fade-right"
           >
             <a
+              href="https://speakerdeck.com/marharyta/helsinki-js-tailwind-and-why-i-like-it"
+              class=""
+            >
+              HelsinkiJS November 2024. Tailwind</a
+            >
+          </h3>
+          <a
+            href="https://speakerdeck.com/marharyta/helsinki-js-tailwind-and-why-i-like-it"
+            class="lg:hidden block text-gray-600 text-xs underline font-medium"
+            >link</a
+          >
+        </div>
+        <div
+          class="relative mt-12 w-full h-full my-20 flex flex-row justify-between"
+        >
+          <h3
+            class="text-md text-gray-600 uppercase font-medium mb-3 w-2/3 lg:w-1/4"
+            data-aos="fade-right"
+          >
+            <a
               href="https://speakerdeck.com/marharyta/the-design-ops-cocktail"
               class=""
             >
@@ -535,21 +554,6 @@
             class="lg:hidden block text-gray-600 text-xs underline font-medium"
             >link</a
           >
-          <!-- <a href="#" class="lg:hidden text-2xl block font-medium flex-none">
-            Slides
-          </a> -->
-          <!-- <img width="66.8%" height="400px" src="#" /> -->
-          <!-- <iframe
-            width="66.8%"
-            height="400px"
-            class="lazyload hidden lg:block rounded-lg shadow-xl"
-            loading="lazy"
-            src=""
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen=""
-          ></iframe> -->
         </div>
         <div
           class="relative mt-12 w-full h-full my-20 flex flex-row justify-between"
@@ -746,29 +750,49 @@
         class="text-3xl lg:text-6xl font-medium lg:font-light lowercase lg:capitalize text-right lg:text-left text-gray-500 lg:text-gray-800"
         data-aos="fade-right"
       >
-        Some Projects
+        Latest Projects
       </h2>
       <div class="h-full flex flex-col start">
         <div
           class="relative mt-8 w-full grid grid-cols-1 place-content-stretch lg:grid-cols-2 2xl:grid-cols-3 gap-6"
         >
+          <!-- Omaposti -->
           <div
             class="rounded-xl bg-stone-200 min-h-full h-max overflow-hidden p-8 lg:p-12 relative grid grid-cols-2 items-end text-stone-400 font-medium"
           >
             <img
               class="rounded-lg shadow-xl hover:scale w-full h-80 max-h-full max-w-full min-w-full object-cover block hover:shadow-2xl hover:scale-105 transition-transform duration-300 col-span-2 place-self-start"
-              src="./finua.png"
+              src="./posti.png"
             />
             <h2 class="pt-36 col-span-1" data-aos="fade-right">
-              FinUA: Digital-first NGO
+              OmaPosti Front-end
+            </h2>
+
+            <a class="pt-36 text-right col-span-1" href="https://oma.posti.fi/"
+              >oma.posti.fi</a
+            >
+            <p class="block col-span-2">
+              ReactJS, TypeScript, Webpack, Vite, module federation, Apollo
+              Client, Clojure, GraphQL, styled-components
+            </p>
+          </div>
+          <div
+            class="rounded-xl bg-stone-200 min-h-full h-max overflow-hidden p-8 lg:p-12 relative grid grid-cols-2 items-end text-stone-400 font-medium"
+          >
+            <img
+              class="rounded-lg shadow-xl hover:scale w-full h-80 max-h-full max-w-full min-w-full object-cover block hover:shadow-2xl hover:scale-105 transition-transform duration-300 col-span-2 place-self-start"
+              src="./myfinua.png"
+            />
+            <h2 class="pt-36 col-span-1" data-aos="fade-right">
+              FinUA: NGO helping Ukrainians in Finland
             </h2>
 
             <a class="pt-36 text-right col-span-1" href="https://my.finua.org/"
               >my.finua.org</a
             >
             <p class="block col-span-2">
-              Next.JS 14, Supabase, Hasura, GraphQL, PostgreSQL, REST API,
-              Resend, Tailwind, Vercel
+              Next.JS 15, Tailwind 4, Supabase, GraphQL, PostgreSQL, REST API,
+              Vercel, Notion API, Apollo Client
             </p>
           </div>
 
@@ -982,23 +1006,12 @@
             >
             for collaboration!
           </p>
-          <a
-            href="https://codepen.io/riittagirl"
-            class="md:inline-block text-5xl md:text-2xl font-light mr-6 mb-3 underline lowercase font-normal text-gray-800 leading-snug"
-            data-aos="fade-right"
-            >CodePen</a
-          >
+
           <a
             href="https://medium.com/@riittagirl"
             class="md:inline-block text-5xl md:text-2xl font-light mr-6 mb-3 underline lowercase font-normal text-gray-800 leading-snug"
             data-aos="fade-right"
             >Medium</a
-          >
-          <a
-            href="https://github.com/marharyta"
-            class="md:inline-block text-5xl md:text-2xl font-light mr-6 mb-3 underline lowercase font-normal text-gray-800 leading-snug"
-            data-aos="fade-right"
-            >GitHub</a
           >
           <a
             href="https://dev.to/riittagirl"
@@ -1013,6 +1026,13 @@
             >LinkedIn</a
           >
           <a
+            href="https://github.com/marharyta"
+            class="md:inline-block text-5xl md:text-2xl font-light mr-6 mb-3 underline lowercase font-normal text-gray-800 leading-snug"
+            data-aos="fade-right"
+            >GitHub</a
+          >
+
+          <a
             href="https://www.instagram.com/riittagirl/"
             class="md:inline-block text-5xl md:text-2xl font-light mr-6 mb-3 underline lowercase font-normal text-gray-800 leading-snug"
             data-aos="fade-right"
@@ -1020,23 +1040,9 @@
           >
         </div>
       </div>
-      <div class="block absolute bottom-0 text-sm text-gray-900">
+      <div class="text-sm text-gray-900 my-6">
         @copyright 2024. My Inner Monologue. Y-tunnus: 2717003-4
       </div>
     </footer>
-
-    <!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init({
-            disable: 'mobile',
-            duration: 600,
-        });
-    </script> -->
-
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/classie/1.0.1/classie.min.js"
-      integrity="sha512-sOMf7h9Uvkeku+gv6cIDNhpgvcunE9pAf3A/ezNcRG7//ZZv7nDm6ut69qAXTIU5J9JTbZ+PfrwqstYrq2ZnQQ=="
-      crossorigin="anonymous"
-    ></script>
   </body>
 </html>
